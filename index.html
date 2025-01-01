@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <header>
+    <header class="logo">
         <img src="Type=Type5.png" >
     </header>
     <div class="login-box">
@@ -18,16 +18,18 @@
             </header>
         </div>
         <div class="input-box">
-            <input type="text" clas="input-field" placeholder="email" autocomplete="off" required>
+            <label for="email">E-mail *</label>
+            <input type="text" class="input-field" id="email" placeholder="email" autocomplete="off" required>
         </div>
         <div class="input-box">
-            <input type="password" class="input-field" placeholder="password" autocomplete="off" required>
+            <label for="password">Password *</label>
+            <input type="password" class="input-field" id="password" placeholder="password" autocomplete="off" required>
         </div>
     </div>
     <div class="input-submit">
-        <button class="submit-btn" id="masuk"></button>
+        <input type="button" id="masuk" />
         <label for="masuk">Masuk</label>
-        <button class="submit-btn" id="daftar"></button>
+        <input type="button" id="daftar">
         <label for="daftar">Daftar</label>
     </div>
 </body>
